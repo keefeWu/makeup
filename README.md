@@ -1,2 +1,39 @@
-# makeup
-自己实现的一些美颜美妆算法
+# BeautyGAN
+
+### 简介
+
+BeautyGAN: Instance-level Facial Makeup Transfer with Deep Generative Adversarial Network
+
+官方网站：[http://liusi-group.com/projects/BeautyGAN](http://liusi-group.com/projects/BeautyGAN)
+
+提供了论文和数据集，但是没有开源代码，也没有提供训练好的模型
+
+### 复现效果
+
+![](result.jpg)
+
+### 使用方法
+
+- Python3.6
+- TensorFlow1.9
+
+下载训练好的模型
+
+- [https://pan.baidu.com/s/1wngvgT0qzcKJ5LfLMO7m8A](https://pan.baidu.com/s/1wngvgT0qzcKJ5LfLMO7m8A)，7lip
+- [https://drive.google.com/drive/folders/1pgVqnF2-rnOxcUQ3SO4JwHUFTdiSe5t9](https://drive.google.com/drive/folders/1pgVqnF2-rnOxcUQ3SO4JwHUFTdiSe5t9)
+
+新建文件夹`model`，将模型文件放于其中
+
+`imgs`中包括11张无妆图片，以及9张有妆图片
+
+默认对`imgs/no_makeup/xfsy_0068.png`进行上妆
+
+```
+python beautygan.py
+```
+
+# ornaments
+### 简介
+滤镜效果,可以给人物加上想要的滤镜
+###　使用方法
+python ornaments.py
